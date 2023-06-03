@@ -1,0 +1,52 @@
+body {
+    margin-left: 30px;
+}
+
+input {
+    text-align: right;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+#integral {
+    pointer-events: none;
+    user-select: none;
+    display: block;
+    width: 100px;
+}
+
+#fx{
+    display: block;
+    margin-left: 75px;
+    margin-top: -85px;
+}
+
+#dx {
+    pointer-events: none;
+    margin-left: 225px;
+    margin-top: -20px;
+}
+
+#ans {
+    margin-top: 20px;
+    padding: 10px 10px 10px 10px;
+    height: 50px;
+    width: 250px;
+    outline: solid black 2px;
+    background-color: aliceblue;
+}
+
+#a {
+    display: flex;
+    margin-left: 55px;
+    margin-top: 30px;
+}
+
+#b {
+    display: flex;
+    margin-left: 80px;
+    margin-bottom: -25px;
+}
+
