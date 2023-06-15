@@ -1,0 +1,26 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #151315;
+    margin: 0rem;
+    overflow: hidden;
+    animation: fadein 5s;
+    text-align: center;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+a {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 80px;
+    font-family: Impact;
+    text-decoration: none;
+}
+

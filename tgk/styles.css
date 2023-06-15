@@ -1,0 +1,54 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #151315;
+    margin: 0rem;
+    overflow: hidden;
+}
+
+#image-track > .image {
+    width: 35vmin;
+    height: 50vmin;
+    object-fit: cover;
+    object-position: 90% 50%;
+}
+img {
+    user-select: none;
+}
+
+#image-track {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    color: white;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+}
+
+p {
+    user-select: none;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.tofix {
+    color: grey;
+}
+
+.fadein { animation: fadein 7s; }
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.grow { transition: all .3s ease-in-out; }
+.grow:hover { transform: scale(1.005); }
