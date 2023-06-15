@@ -94,9 +94,9 @@ const trap = () => {
 }
 
 
-window.addEventListener("DOMContentLoaded", event => {
-    const audio = document.querySelector("audio");
-    audio.volume = 0.2;
-    audio.play();
-  });
+// window.addEventListener("DOMContentLoaded", event => {
+//     const audio = document.querySelector("audio");
+//     audio.volume = 0.2;
+//     audio.play();
+//   });
   
