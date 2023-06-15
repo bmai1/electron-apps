@@ -1,0 +1,121 @@
+body {
+    margin: 0px;
+    background-color: rgb(255, 255, 255);
+    background-image: url("media/background.png");
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.cards,
+.card {
+    aspect-ratio: 5 / 7;
+}
+
+.cards,
+.big-card {
+    width: 30vmin;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    transition: transform 800ms cubic-bezier(.05,.43,.25,.95);
+}
+
+.big-card {
+    width: 30vmin;
+    border: solid rgb(55, 4, 59) 1px;
+    border-radius: 1vmin;
+}
+
+.big-card:hover {
+    filter: brightness(1.05);
+    opacity: 0.95;
+}
+
+.little-card {
+    width: 12vmin;
+    border: solid rgb(55, 4, 59) 1px;
+    border-radius: 2vmin;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.big-card:nth-child(2) {
+    background-image: url("media/sen.webp");
+    background-size: contain;
+    transform: translateX(-10%) rotate(-1deg);
+}
+
+.big-card:nth-child(4) {
+    background-image: url("media/aka.jpg");
+    background-size: cover;
+    transform: rotate(2deg);
+}
+
+.big-card:nth-child(6) {
+    background-image: url("media/ting.jpg");
+    background-size: cover;
+    transform: translateX(-6%) rotate(-3deg);
+}
+
+.big-card:nth-child(8) {
+    background-image: url("media/nana.png");
+    background-size: cover;
+    transform: translatex(10%, 3%) rotate(5deg);
+}
+
+.cards:hover > .big-card:nth-child(2) {
+    transform: translate(-100%, 25%) rotate(-24deg);
+}
+
+.cards:hover > .big-card:nth-child(4) {
+    transform: translate(-35%, 8%) rotate(-8deg);
+}
+
+.cards:hover > .big-card:nth-child(6) {
+    transform: translate(35%, 8%) rotate(8deg);
+}
+
+.cards:hover > .big-card:nth-child(8) {
+    transform: translate(100%, 25%) rotate(24deg);
+}
+
+.little-card:nth-child(1) {
+    background-image: url("media/sato.png");
+    background-size: cover;
+}
+
+.little-card:nth-child(3) {
+    background-image: url("media/mami.jpg");
+    background-size: cover;
+}
+
+.little-card:nth-child(5) {
+    background-image: url("media/misa.jpg");
+    background-size: cover;
+}
+
+.little-card:nth-child(7) {
+    background-image: url("media/lain.jpg");
+    background-size: cover;
+}
+
+.cards:hover > .little-card:nth-child(1) {
+    transform: translate(200%, -160%) rotate(-15deg);
+}
+
+.cards:hover > .little-card:nth-child(3) {
+    transform: translate(160%, 155%) rotate(15deg);
+}
+
+.cards:hover > .little-card:nth-child(5) {
+    transform: translate(-290%, -160%) rotate(15deg);
+}
+
+.cards:hover > .little-card:nth-child(7) {
+    transform: translate(-280%, 140%) rotate(-15deg);
+}
